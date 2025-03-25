@@ -23,7 +23,7 @@ class _QuizState extends State<Quiz> {
     if (selectedAnswers.length == questions.length) {
       setState(() {
         // selectedAnswers = []; //TODO: Move to Results screen restart
-        activeScreen = ResultsScreen(chosenAnswers: selectedAnswers); //, onRestart: restartQuiz,
+        activeScreen = ResultsScreen(chosenAnswers: selectedAnswers, onRestart: restartQuiz,);
       });
     }
   }

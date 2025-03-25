@@ -14,9 +14,9 @@ class QuestionsSummary extends StatelessWidget {
           children: summaryData.map((data) {
             Color cirColor;
             if (data['user_answer'] == data['correct_answer']) {
-              cirColor = Colors.green;  // Green for correct answer
+              cirColor = Colors.green; 
             } else {
-              cirColor = Colors.red;  // Red for incorrect answer
+              cirColor = Colors.red;  
             }
 
             return Row(
