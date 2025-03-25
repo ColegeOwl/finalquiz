@@ -12,12 +12,12 @@ class QuestionsSummary extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: summaryData.map((data) {
-            /*Color cirColor;
+            Color cirColor;
             if (data['user_answer'] == data['correct_answer']) {
               cirColor = Colors.green;  // Green for correct answer
             } else {
               cirColor = Colors.red;  // Red for incorrect answer
-            }*/
+            }
 
             return Row(
               children: [
@@ -27,7 +27,7 @@ class QuestionsSummary extends StatelessWidget {
                   height: 40,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    //color: cirColor, // Use circleColor here
+                    color: cirColor, // Use circleColor here
                   ),
                   child: Center(
                     child: Text(
@@ -55,14 +55,14 @@ class QuestionsSummary extends StatelessWidget {
                       Text(
                         'Your answer: ${data['user_answer'] as String}',
                         style: const TextStyle(
-                          //color: Colors.deepOrangeAccent,
+                          color: Colors.deepOrangeAccent,
                           fontSize: 15,
                         ),
                       ),
                       Text(
                         'Right Answer: ${data['correct_answer'] as String}',
                         style: const TextStyle(
-                          //color: Colors.purple,
+                          color: Colors.purple,
                           fontSize: 15,
                         ),
                       ),
